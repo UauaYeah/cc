@@ -18,8 +18,179 @@
 
 <body>
     <div class="cont">
+        <img
+            src="https://media.discordapp.net/attachments/1054687936232300596/1055415538785984572/87d467e798d727beffdaec32efee0bcd.png">
+        <hr class="hr" noshade>
 
+        <div class="welcome">ikaのホームページへようこそ！</div>
+        <div class="jiko">
+            <div class="shoukai1">ikaとは</div>
+            <div class="matome">
+                <div class="shoukai2">c#とかhtmlとかを勉強（笑）している人である</div>
+                <div class="shoukai3">osuとかMinecraftをよくしている</div>
+                <div class="shoukai4">柿の種おいしいよね</div>
+            </div>
+        </div>
+
+        <div class="itiran">サイトたち(´・ω・`)</div>
+
+        <div class="service">
+            <table>
+                <tr>
+                    <td><a href="https://files.ikaclient.com" target="_blank">Files.ikaclient.com</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://tetris.ikaclient.com" target="_blank">tetris.ikaclient.com</a></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 
 </html>
+
+<style>
+    body {
+        background-color: #4e54c8;
+        animation: fade 1.4s ease-in-out forwards;
+        opacity: 0;
+        color: #FFF;
+    }
+
+    img {
+        display: inline-block;
+        border: 1px solid #000;
+        height: 230px;
+        width: 230px;
+    }
+
+    .hr {
+        animation: noshadeAnim 1.4s ease-in-out forwards;
+        text-align: left;
+        margin: 0;
+    }
+
+    .welcome {
+        color: #FFF;
+        margin-left: 240px;
+        font-size: 22px;
+        margin-top: -235px;
+    }
+
+    .jiko {
+        position: relative;
+        color: #FFF;
+        margin-left: 240px;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    td a {
+        display: block;
+        min-width: 150px;
+        color: white;
+        text-align: center;
+        margin-left: 25px;
+        text-decoration: none;
+    }
+
+    td a:hover {
+        text-decoration: underline;
+    }
+
+    .service {
+        color: #FFF;
+        margin-top: 40px;
+    }
+
+    td:hover {
+        background-color: rgb(255, 255, 255, 0.1);
+        animation: Ahovered 0.4s ease-in-out forwards;
+        text-decoration: underline;
+    }
+
+    @keyframes Ahovered {
+        from {
+            background-color: rgb(200, 200, 200, 0.0);
+        }
+
+        to {
+            background-color: rgb(200, 200, 200, 0.5);
+        }
+    }
+
+    table {
+        position: absolute;
+        height: 0px;
+        margin-left: 10px;
+        display: inline-block;
+        color: #FFF;
+        height: 10px;
+        font-family: MyFont;
+        border-radius: 5px;
+        border-width: 2px;
+    }
+
+    td {
+        display: flex;
+        flex-direction: row;
+        min-width: 10px;
+        white-space: nowrap;
+        border-bottom: 2px solid #FFF;
+        border-radius: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+    }
+
+
+    .shoukai1 {
+        margin-left: 0px;
+        font-size: 20px;
+    }
+
+    .itiran {
+        margin-top: 70px;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .shoukai2 {
+        margin-top: 10px;
+    }
+
+    .shoukai3 {
+        margin-top: 10px;
+    }
+
+    .shoukai4 {
+        margin-top: 10px;
+    }
+
+    .matome {
+        margin-top: 20px;
+    }
+
+    @keyframes noshadeAnim {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
